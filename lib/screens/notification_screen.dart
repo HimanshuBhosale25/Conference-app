@@ -7,9 +7,48 @@ class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
 
   static const _notifications = [
-    {'title': 'Welcome to ICDMAI!', 'body': 'We are glad to have you here.', 'time': '2h ago'},
-    {'title': 'Keynote starts soon', 'body': 'The morning keynote begins in 30 minutes.', 'time': '5h ago'},
-    {'title': 'New poll available', 'body': 'Share your opinion on data ethics.', 'time': '1d ago'},
+    {
+      'title': 'Welcome to BRAINCON 2026!',
+      'body': 'We are excited to have you at the flagship AI conference in Singapore. Check the agenda for all sessions.',
+      'time': '1h ago',
+      'icon': Icons.celebration,
+    },
+    {
+      'title': 'Inaugural Keynote — Today 10:00 AM',
+      'body': 'The Opening Keynote begins shortly at the Main Auditorium, MDIS. Don\'t miss it!',
+      'time': '2h ago',
+      'icon': Icons.mic,
+    },
+    {
+      'title': 'Paper Submission Deadline Extended',
+      'body': 'The final deadline for camera-ready paper submission has been extended by 48 hours.',
+      'time': '5h ago',
+      'icon': Icons.article_outlined,
+    },
+    {
+      'title': 'New Poll Available',
+      'body': 'Vote on "Which AI track excites you most?" — your opinion shapes future BRAINCON editions.',
+      'time': '8h ago',
+      'icon': Icons.poll_outlined,
+    },
+    {
+      'title': 'Workshop Registration Open',
+      'body': 'Limited seats for "Emerging AI Technologies for Human-Centric Systems" workshop on Day 3.',
+      'time': '1d ago',
+      'icon': Icons.school_outlined,
+    },
+    {
+      'title': 'Hackathon Finals — Day 2, 4:30 PM',
+      'body': 'Join us at the Innovation Lab, MDIS for the final presentations and prize distribution.',
+      'time': '1d ago',
+      'icon': Icons.code,
+    },
+    {
+      'title': 'Conference App Update',
+      'body': 'The BRAINCON 2026 app has been updated with the latest schedule and speaker profiles.',
+      'time': '2d ago',
+      'icon': Icons.system_update_outlined,
+    },
   ];
 
   @override
@@ -29,19 +68,29 @@ class NotificationScreen extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.notifications, color: AppTheme.navyBlue),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppTheme.navyBlue,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(n['icon'] as IconData,
+                      color: Colors.white, size: 18),
+                ),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(n['title']!, style: AppTheme.subheading),
+                      Text(n['title'] as String, style: AppTheme.subheading),
                       const SizedBox(height: 4),
-                      Text(n['body']!, style: AppTheme.body),
+                      Text(n['body'] as String,
+                          style: AppTheme.body.copyWith(height: 1.4)),
                     ],
                   ),
                 ),
-                Text(n['time']!, style: AppTheme.caption),
+                const SizedBox(width: 8),
+                Text(n['time'] as String, style: AppTheme.caption),
               ],
             ),
           );

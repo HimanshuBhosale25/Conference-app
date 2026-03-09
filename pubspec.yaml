@@ -24,3 +24,45 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/abhijit_khurpe.jpg
+    - assets/aditya_sinha.jpg
+    - assets/anu_gokhale.jpg
+    - assets/bhagyashri_wankar.jpg
+    - assets/braincon_logo.png
+    - assets/cp_ramanarayanan.jpg
+    - assets/deepak_waikar.jpg
+    - assets/devidas_thosar.jpg
+    - assets/dhanamma_jagli.jpg
+    - assets/dhiraj_chaurasia.jpg
+    - assets/ghrcem_logo.png
+    - assets/gs_mani.jpg
+    - assets/harshali_patil.jpg
+    - assets/jasbir_kaur.jpg
+    - assets/juergen_seitz.jpg
+    - assets/komal_jadhav.jpg
+    - assets/krantee_jamdaade.jpg
+    - assets/lipika_dey.jpg
+    - assets/mohd_helmy.jpg
+    - assets/mrityunjoy_panday.jpg
+    - assets/nagnath_hulle.jpg
+    - assets/neelam_naik.jpg
+    - assets/neel_mani.jpg
+    - assets/neha_sharma.jpg
+    - assets/nitin_korde.jpg
+    - assets/pk_sinha.jpg
+    - assets/pradheep_k.jpg
+    - assets/rachna_sable.jpg
+    - assets/radha_shirbhate.jpg
+    - assets/rajeeb_dey.jpg
+    - assets/ranjan_bala_jain.jpg
+    - assets/rawidean.jpg
+    - assets/rd_kharadkar.jpg
+    - assets/sakharam_kolpe.jpg
+    - assets/seema_purohit.jpg
+    - assets/shruti_mantri.jpg
+    - assets/sonali_sonavane.jpg
+    - assets/sumitra_iyer.jpg
+    - assets/trupti_mohota.jpg
+    - assets/vaibhav_hendre.jpg
+

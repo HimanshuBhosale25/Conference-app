@@ -8,23 +8,23 @@ import 'screens/agenda_screen.dart';
 import 'screens/timeline_screen.dart';
 import 'screens/notification_screen.dart';
 import 'screens/profile_screen.dart';
-import 'screens/speakers_screen.dart';
-import 'screens/teams_screen.dart';
+import 'screens/committee_screen.dart';
+import 'screens/organising_team_screen.dart';
 import 'screens/polls_screen.dart';
 
 final GoRouter _router = GoRouter(
   initialLocation: '/',
   routes: [
-    GoRoute(path: '/',            builder: (context, state) => const SplashScreen()),
-    GoRoute(path: '/login',       builder: (context, state) => const LoginScreen()),
-    GoRoute(path: '/home',        builder: (context, state) => const HomeScreen()),
-    GoRoute(path: '/agenda',      builder: (context, state) => const AgendaScreen()),
-    GoRoute(path: '/timeline',    builder: (context, state) => const TimelineScreen()),
+    GoRoute(path: '/',              builder: (context, state) => const SplashScreen()),
+    GoRoute(path: '/login',         builder: (context, state) => const LoginScreen()),
+    GoRoute(path: '/home',          builder: (context, state) => const HomeScreen()),
+    GoRoute(path: '/agenda',        builder: (context, state) => const AgendaScreen()),
+    GoRoute(path: '/timeline',      builder: (context, state) => const TimelineScreen()),
     GoRoute(path: '/notifications', builder: (context, state) => const NotificationScreen()),
-    GoRoute(path: '/profile',     builder: (context, state) => const ProfileScreen()),
-    GoRoute(path: '/speakers',    builder: (context, state) => const SpeakersScreen()),
-    GoRoute(path: '/teams',       builder: (context, state) => const TeamsScreen()),
-    GoRoute(path: '/polls',       builder: (context, state) => const PollsScreen()),
+    GoRoute(path: '/profile',       builder: (context, state) => const ProfileScreen()),
+    GoRoute(path: '/committee',     builder: (context, state) => const CommitteeScreen()),
+    GoRoute(path: '/team',          builder: (context, state) => const OrganisingTeamScreen()),
+    GoRoute(path: '/polls',         builder: (context, state) => const PollsScreen()),
   ],
 );
 
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'ICDMAI',
+      title: 'BRAINCON 2026',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.themeData,
       routerConfig: _router,

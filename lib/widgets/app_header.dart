@@ -25,7 +25,8 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Welcome!', style: AppTheme.caption.copyWith(color: Colors.white70, fontSize: 12)),
+              Text('Welcome!',
+                  style: AppTheme.caption.copyWith(color: Colors.white70, fontSize: 11)),
               Text(MockData.userName, style: AppTheme.welcomeText),
             ],
           ),
@@ -33,14 +34,24 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
             children: [
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(6)),
-                child: Text('ICDMAI', style: AppTheme.body.copyWith(color: AppTheme.navyBlue, fontWeight: FontWeight.bold, fontSize: 11)),
+                decoration: BoxDecoration(
+                    color: Colors.white, borderRadius: BorderRadius.circular(6)),
+                child: Text('BRAIN',
+                    style: AppTheme.body.copyWith(
+                        color: AppTheme.navyBlue,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 11)),
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: 6),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(6)),
-                child: Text('S4DS', style: AppTheme.body.copyWith(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11)),
+                decoration: BoxDecoration(
+                    color: Colors.orange, borderRadius: BorderRadius.circular(6)),
+                child: Text('2026',
+                    style: AppTheme.body.copyWith(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 11)),
               ),
             ],
           ),

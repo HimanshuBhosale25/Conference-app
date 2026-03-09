@@ -4,7 +4,6 @@ import '../theme.dart';
 
 class BottomNavBar extends StatelessWidget {
   final int currentIndex;
-
   const BottomNavBar({super.key, required this.currentIndex});
 
   void _onTap(BuildContext context, int index) {
@@ -31,7 +30,7 @@ class BottomNavBar extends StatelessWidget {
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
         BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: 'Agenda'),
         BottomNavigationBarItem(icon: Icon(Icons.photo_library), label: 'Timeline'),
-        BottomNavigationBarItem(icon: Icon(Icons.notifications), label: 'Notification'),
+        BottomNavigationBarItem(icon: Icon(Icons.notifications), label: 'Notifications'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
       ],
     );
